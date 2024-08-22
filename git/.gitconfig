@@ -1,0 +1,12 @@
+[init]
+	defaultBranch = main
+[user]
+	email = ngyentrunghieu742003@gmail.com
+	name = hiengyen
+[core]
+  editor = "nvim"
+[safe]
+	directory = /etc/nixos
+	directory = /home/hiengyen/nixos
+
+
