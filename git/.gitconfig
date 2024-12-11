@@ -8,5 +8,6 @@
 [safe]
 	directory = /etc/nixos
 	directory = /home/hiengyen/nixos
+	directory = /home/hiengyen/.dotfiles/ohmyzsh/.oh-my-zsh
 
 

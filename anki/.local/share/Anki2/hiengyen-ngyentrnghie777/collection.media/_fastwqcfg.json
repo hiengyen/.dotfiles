@@ -1,0 +1,211 @@
+{
+    "1668606621208": {
+        "def": 0,
+        "list": [
+            {
+                "fields": [
+                    {
+                        "cloze_word": false,
+                        "dict_fld_name": "Audio Pronunciation",
+                        "dict_fld_ord": 0,
+                        "dict_name": "Baicizhan",
+                        "dict_unique": "Baicizhan",
+                        "fld_name": "Front",
+                        "fld_ord": 0,
+                        "ignore": true,
+                        "skip_valued": true,
+                        "word_checked": true
+                    },
+                    {
+                        "cloze_word": false,
+                        "dict_fld_name": "Audio Pronunciation",
+                        "dict_fld_ord": 0,
+                        "dict_name": "Baicizhan",
+                        "dict_unique": "Baicizhan",
+                        "fld_name": "Back",
+                        "fld_ord": 1,
+                        "ignore": true,
+                        "skip_valued": true,
+                        "word_checked": false
+                    },
+                    {
+                        "cloze_word": false,
+                        "dict_fld_name": "Audio Pronunciation",
+                        "dict_fld_ord": 0,
+                        "dict_name": "Baicizhan",
+                        "dict_unique": "Baicizhan",
+                        "fld_name": "Extra",
+                        "fld_ord": 2,
+                        "ignore": true,
+                        "skip_valued": true,
+                        "word_checked": false
+                    }
+                ],
+                "name": "Config 1"
+            }
+        ]
+    },
+    "1668609538669": {
+        "def": 0,
+        "list": [
+            {
+                "fields": [
+                    {
+                        "cloze_word": false,
+                        "dict_fld_name": "Audio Pronunciation",
+                        "dict_fld_ord": 0,
+                        "dict_name": "Baicizhan",
+                        "dict_unique": "Baicizhan",
+                        "fld_name": "Word",
+                        "fld_ord": 0,
+                        "ignore": true,
+                        "skip_valued": true,
+                        "word_checked": true
+                    },
+                    {
+                        "cloze_word": false,
+                        "dict_fld_name": "Audio Pronunciation",
+                        "dict_fld_ord": 0,
+                        "dict_name": "Baicizhan",
+                        "dict_unique": "Baicizhan",
+                        "fld_name": "IPA",
+                        "fld_ord": 1,
+                        "ignore": true,
+                        "skip_valued": true,
+                        "word_checked": false
+                    },
+                    {
+                        "cloze_word": false,
+                        "dict_fld_name": "Audio Pronunciation",
+                        "dict_fld_ord": 0,
+                        "dict_name": "Baicizhan",
+                        "dict_unique": "Baicizhan",
+                        "fld_name": "Definition",
+                        "fld_ord": 2,
+                        "ignore": true,
+                        "skip_valued": true,
+                        "word_checked": false
+                    },
+                    {
+                        "cloze_word": false,
+                        "dict_fld_name": "Audio Pronunciation",
+                        "dict_fld_ord": 0,
+                        "dict_name": "Baicizhan",
+                        "dict_unique": "Baicizhan",
+                        "fld_name": "Definitions",
+                        "fld_ord": 3,
+                        "ignore": true,
+                        "skip_valued": true,
+                        "word_checked": false
+                    },
+                    {
+                        "cloze_word": false,
+                        "dict_fld_name": "Audio Pronunciation",
+                        "dict_fld_ord": 0,
+                        "dict_name": "Baicizhan",
+                        "dict_unique": "Baicizhan",
+                        "fld_name": "Sentence",
+                        "fld_ord": 4,
+                        "ignore": true,
+                        "skip_valued": true,
+                        "word_checked": false
+                    },
+                    {
+                        "cloze_word": false,
+                        "dict_fld_name": "Audio Pronunciation",
+                        "dict_fld_ord": 0,
+                        "dict_name": "Baicizhan",
+                        "dict_unique": "Baicizhan",
+                        "fld_name": "ExtraInfo",
+                        "fld_ord": 5,
+                        "ignore": true,
+                        "skip_valued": true,
+                        "word_checked": false
+                    },
+                    {
+                        "cloze_word": false,
+                        "dict_fld_name": "Audio Pronunciation",
+                        "dict_fld_ord": 0,
+                        "dict_name": "Baicizhan",
+                        "dict_unique": "Baicizhan",
+                        "fld_name": "Url",
+                        "fld_ord": 6,
+                        "ignore": true,
+                        "skip_valued": true,
+                        "word_checked": false
+                    },
+                    {
+                        "cloze_word": false,
+                        "dict_fld_name": "Audio Pronunciation",
+                        "dict_fld_ord": 0,
+                        "dict_name": "Baicizhan",
+                        "dict_unique": "Baicizhan",
+                        "fld_name": "Audio",
+                        "fld_ord": 7,
+                        "ignore": true,
+                        "skip_valued": true,
+                        "word_checked": false
+                    },
+                    {
+                        "cloze_word": false,
+                        "dict_fld_name": "Images",
+                        "dict_fld_ord": 2,
+                        "dict_name": "Baicizhan",
+                        "dict_unique": "Baicizhan",
+                        "fld_name": "Picture",
+                        "fld_ord": 8,
+                        "ignore": false,
+                        "skip_valued": true,
+                        "word_checked": false
+                    },
+                    {
+                        "cloze_word": false,
+                        "dict_fld_name": "Examples",
+                        "dict_fld_ord": 5,
+                        "dict_name": "Baicizhan",
+                        "dict_unique": "Baicizhan",
+                        "fld_name": "Description",
+                        "fld_ord": 9,
+                        "ignore": false,
+                        "skip_valued": true,
+                        "word_checked": false
+                    },
+                    {
+                        "cloze_word": false,
+                        "dict_fld_name": "translation",
+                        "dict_fld_ord": 0,
+                        "dict_name": "Baidu-Translate",
+                        "dict_unique": "BaiduFy",
+                        "fld_name": "Mnemonic",
+                        "fld_ord": 10,
+                        "ignore": false,
+                        "skip_valued": true,
+                        "word_checked": false
+                    },
+                    {
+                        "cloze_word": false,
+                        "dict_fld_name": "Default",
+                        "dict_fld_ord": 0,
+                        "dict_name": "mtBab EV",
+                        "dict_unique": "39c9a570417c7c2d995b9af38d3bd607",
+                        "fld_name": "Vietnamese",
+                        "fld_ord": 11,
+                        "ignore": false,
+                        "skip_valued": true,
+                        "word_checked": false
+                    }
+                ],
+                "name": "Config 1"
+            }
+        ]
+    },
+    "User 1_last": 1668606621208,
+    "dirs": [
+        "D:/Program Files/Ankii/English-Vietnamese Dictionary and Media/English-Vietnamese Dictionary and Media/English_Vietnamese_Dictionary"
+    ],
+    "export_media": false,
+    "last_folder": "D:/Program Files/Ankii/English-Vietnamese Dictionary and Media/English-Vietnamese Dictionary and Media/English_Vietnamese_Dictionary",
+    "last_model": 1668606621208,
+    "use_filename": true,
+    "version": "v2.0.0b"
+}

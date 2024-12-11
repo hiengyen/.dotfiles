@@ -21,8 +21,10 @@ return {
         "impl",
         "delve",
         --For Python
+        -- "python-lsp-server ",
         "pyright",
         "ruff",
+
         --Rust
       })
     end,

@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 #Config Nix  
 export NIXPKGS_ALLOW_UNFREE=1
@@ -138,6 +138,7 @@ export EDITOR='nvim'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+ typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 #Enable nested TMUX "sessions should be nested with care, unset $TMUX to force"
 unset TMUX
 

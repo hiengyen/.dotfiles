@@ -1,0 +1,54 @@
+nid	mid	fields
+1694222725411	1668609538669	propose	/prəˈpəʊz/	
+                <style>
+                    span.star {color: #FFBB00;}
+                    span.cet  {margin: 0 3px;padding: 0 3px;font-weight: normal;font-size: 0.8em;color: white;background-color: #5cb85c;border-radius: 3px;}
+                    span.pos  {text-transform:lowercase; font-size:0.9em; margin-right:5px; padding:2px 4px; color:white; background-color:#0d47a1; border-radius:3px;}
+                    span.tran {margin:0; padding:0;}
+                    span.eng_tran {margin-right:3px; padding:0;}
+                    span.chn_tran {color:#0d47a1;}
+                    ul.sents {font-size:0.8em; list-style:square inside; margin:3px 0;padding:5px;background:rgba(13,71,161,0.1); border-radius:5px;}
+                    li.sent  {margin:0; padding:0;}
+                    span.eng_sent {margin-right:5px;}
+                    span.chn_sent {color:#0d47a1;}
+                </style><span class='pos'>V-T</span><span class="tran"><span class="eng_tran">If you <b>propose</b> something such as a plan or an idea, you suggest it for people to think about and decide upon.</span></span><ul class="sents"><li class='sent'><span class='eng_sent'>Hamilton <b>propose</b>d a change in the traditional debating format.</span></li></ul>	
+                <style>
+                    span.star {color: #FFBB00;}
+                    span.cet  {margin: 0 3px;padding: 0 3px;font-weight: normal;font-size: 0.8em;color: white;background-color: #5cb85c;border-radius: 3px;}
+                    span.pos  {text-transform:lowercase; font-size:0.9em; margin-right:5px; padding:2px 4px; color:white; background-color:#0d47a1; border-radius:3px;}
+                    span.tran {margin:0; padding:0;}
+                    span.eng_tran {margin-right:3px; padding:0;}
+                    span.chn_tran {color:#0d47a1;}
+                    ul.sents {font-size:0.8em; list-style:square inside; margin:3px 0;padding:5px;background:rgba(13,71,161,0.1); border-radius:5px;}
+                    li.sent  {margin:0; padding:0;}
+                    span.eng_sent {margin-right:5px;}
+                    span.chn_sent {color:#0d47a1;}
+                </style><span class='pos'>V-T</span><span class="tran"><span class="eng_tran">If you <b>propose</b> something such as a plan or an idea, you suggest it for people to think about and decide upon.</span></span><ul class="sents"><li class='sent'><span class='eng_sent'>Hamilton <b>propose</b>d a change in the traditional debating format.</span></li></ul><hr><span class='pos'>V-T</span><span class="tran"><span class="eng_tran">If you <b>propose</b> to do something, you intend to do it.</span></span><ul class="sents"><li class='sent'><span class='eng_sent'>It's still far from clear what action the government <b>propose</b>s to take over the affair.</span></li></ul><hr><span class='pos'>V-T</span><span class="tran"><span class="eng_tran">If you <b>propose</b> a motion for debate, or a candidate for election, you begin the debate or the election procedure by formally stating your support for that motion or candidate.</span></span><ul class="sents"><li class='sent'><span class='eng_sent'>He has <b>propose</b>d a resolution limiting the role of U.S. troops.</span></li></ul><hr><span class='pos'>V-T/V-I</span><span class="tran"><span class="eng_tran">If you <b>propose to</b> someone, or <b>propose marriage</b> <b>to</b> them, you ask them to marry you.</span></span><ul class="sents"><li class='sent'><span class='eng_sent'>He <b>propose</b>d to his girlfriend over a public-address system.</span></li></ul>	<b>Propose</b>	<span class="star">★★★★</span><span class="cet">CET4</span><span class="cet">TEM4</span>	https://ngoaingu24h.vn/bai-hoc/tu-vung-toeic-part-7-7--5268350580031488	[sound:ODH_encn_Collins_propose_0.mp3]				<div><div><div>đề nghị</div><div><br>We proposed that a change should be made in the arrangement of delivery.<br>(Chúng tôi đề nghị là nên có sự thay đổi trong việc giao hàng.)s</div></div></div><div><br></div>
+1691572520465	1668609538669	separate		
+                <style>
+                    span.star {color: #FFBB00;}
+                    span.cet  {margin: 0 3px;padding: 0 3px;font-weight: normal;font-size: 0.8em;color: white;background-color: #5cb85c;border-radius: 3px;}
+                    span.pos  {text-transform:lowercase; font-size:0.9em; margin-right:5px; padding:2px 4px; color:white; background-color:#0d47a1; border-radius:3px;}
+                    span.tran {margin:0; padding:0;}
+                    span.eng_tran {margin-right:3px; padding:0;}
+                    span.chn_tran {color:#0d47a1;}
+                    ul.sents {font-size:0.8em; list-style:square inside; margin:3px 0;padding:5px;background:rgba(13,71,161,0.1); border-radius:5px;}
+                    li.sent  {margin:0; padding:0;}
+                    span.eng_sent {margin-right:5px;}
+                    span.chn_sent {color:#0d47a1;}
+                </style><span class="pos">ADJ</span><span class="tran"><span class="eng_tran">If one thing is <b>separate</b> <b>from</b> another, there is a barrier, space, or division between them, so that they are clearly two things.</span></span>			<span class="star">★★★★</span><span class="cet">CET4</span><span class="cet">TEM4</span>	https://ngoaingu24h.vn/bai-hoc/day-14-dong-tu-4--6722860515065856	[sound:ODH_encn_Collins_separate_1.mp3]				<div>tách biệt</div><div><br>separation (n): sự tách biệt<br>separated (a): ly thân<br>separately (adv): riêng biệt<br>VD: International experience is the main qualification that separates Mr. Sloan from the other candidates.<br>(Kinh nghiệm quốc tế là năng lực chính tách biệt ông Sloan với những ứng viên còn lại.)<br>Ghi nhớ:<br>separate A from B: tách biệt A khỏi B</div>
+1694222611748	1668609538669	profit	/ˈprɒfɪt/	
+                <style>
+                    span.star {color: #FFBB00;}
+                    span.cet  {margin: 0 3px;padding: 0 3px;font-weight: normal;font-size: 0.8em;color: white;background-color: #5cb85c;border-radius: 3px;}
+                    span.pos  {text-transform:lowercase; font-size:0.9em; margin-right:5px; padding:2px 4px; color:white; background-color:#0d47a1; border-radius:3px;}
+                    span.tran {margin:0; padding:0;}
+                    span.eng_tran {margin-right:3px; padding:0;}
+                    span.chn_tran {color:#0d47a1;}
+                    ul.sents {font-size:0.8em; list-style:square inside; margin:3px 0;padding:5px;background:rgba(13,71,161,0.1); border-radius:5px;}
+                    li.sent  {margin:0; padding:0;}
+                    span.eng_sent {margin-right:5px;}
+                    span.chn_sent {color:#0d47a1;}
+                </style><span class='pos'>N-VAR</span><span class="tran"><span class="eng_tran">A <b>profit</b> is an amount of money that you gain when you are paid more for something than it cost you to make, get, or do it.</span></span><ul class="sents"><li class='sent'><span class='eng_sent'>The bank made pre-tax <b>profit</b>s of $6.5 million.</span></li><li class='sent'><span class='eng_sent'>You can improve your chances of <b>profit</b> by sensible planning.</span></li></ul>	<b>Profit</b>	<span class="star">★★★★</span><span class="cet">CET4</span><span class="cet">TEM4</span>	https://ngoaingu24h.vn/bai-hoc/tu-vung-toeic-part-7-7--5268350580031488	[sound:ODH_encn_Collins_profit_0.mp3]				<div><div><div><div>lợi nhuận</div><div><br>There is little profit in exporting such goods now.<br>(Xuất khẩu loại hàng hoá như thế này thì lợi nhuận không cao.)</div></div></div></div><div><br></div>
+1733062272047	1668606621209	on business	<style>.odh-expression {font-size: 1em!important;font-weight: normal!important;}</style>add notes here.(to save, need setup export option in backend)
+1733062305669	1668606621209	on business	<style>.odh-expression {font-size: 1em!important;font-weight: normal!important;}</style>add notes here.(to save, need setup export option in backend)
