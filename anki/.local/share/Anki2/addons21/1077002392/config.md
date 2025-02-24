@@ -1,1 +1,0 @@
-Please operate on the add-on's graphical configuration page.
