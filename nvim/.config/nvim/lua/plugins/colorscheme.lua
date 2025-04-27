@@ -9,10 +9,7 @@ return {
   background = "light",
 
   -- Configure LazyVim to load theme
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "dracula",
-    },
-  },
+  { "LazyVim/LazyVim", opts = {
+    colorscheme = "dracula",
+  } },
 }

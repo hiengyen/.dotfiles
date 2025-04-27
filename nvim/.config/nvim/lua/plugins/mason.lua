@@ -4,28 +4,25 @@ return {
 
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
+        -- For Lua
         "stylua",
         "selene",
         "luacheck",
+        -- For any Shell
         "shellcheck",
         "shfmt",
         --For Typescript ..
         "typescript-language-server",
-        "css-lsp",
-        "js-debug-adapter",
+        -- "css-lsp",
+        -- "js-debug-adapter",
         --For Go
         "gopls",
         "goimports",
         "gofumpt",
-        "gomodifytags",
-        "impl",
-        "delve",
         --For Python
         -- "python-lsp-server ",
         "pyright",
         "ruff",
-
-        --Rust
       })
     end,
   },

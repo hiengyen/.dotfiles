@@ -1,36 +1,18 @@
 return {
-  --turn off flash.nvim
-  {
-    "folke/flash.nvim",
-    enabled = false,
-  },
 
-  --run git command
+  -- add telescope-fzf-native
   {
-    "dinhhuy258/git.nvim",
-    event = "BufReadPre",
-    opts = {
-      keymaps = {
-        -- Open blame window
-        blame = "<Leader>gb",
-        -- Open file/folder in git repository
-        browse = "<Leader>go",
-      },
+    "telescope.nvim",
+    dependencies = {
+      "nvim-telescope/telescope-fzf-native.nvim",
+      build = "make",
+      config = function()
+        require("telescope").load_extension("fzf")
+      end,
     },
   },
-  -- add telescope-fzf-native
-      {
-        "telescope.nvim",
-        dependencies = {
-          "nvim-telescope/telescope-fzf-native.nvim",
-          build = "make",
-          config = function()
-            require("telescope").load_extension("fzf")
-          end,
-        },
-      },
 
-  --telescope.nvim : go to definition, go to references
+  --telescope.nvim
   {
     "nvim-telescope/telescope.nvim",
     branch = "0.1.x",
@@ -60,8 +42,8 @@ return {
           path_display = { "smart" },
           mappings = {
             i = {
-              ["<C-k>"] = actions.move_selection_previous, -- move to prev result
-              ["<C-j>"] = actions.move_selection_next, -- move to next result
+              ["<C-k>"] = actions.move_selection_previous,
+              ["<C-j>"] = actions.move_selection_next,
               ["<C-q>"] = actions.send_selected_to_qflist
                 + custom_actions.open_trouble_qflist,
               ["<C-t>"] = trouble_telescope.smart_open_with_trouble,
@@ -77,9 +59,8 @@ return {
 
       telescope.load_extension("fzf")
 
-
       -- set keymaps
-      local keymap = vim.keymap -- for conciseness
+      local keymap = vim.keymap
 
       keymap.set(
         "n",
@@ -105,7 +86,6 @@ return {
         "<cmd>Telescope grep_string<cr>",
         { desc = "Find string under cursor in cwd" }
       )
-      -- keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
     end,
   },
 }
