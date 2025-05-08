@@ -19,6 +19,8 @@ return {
         --For Typescript
         "typescript",
         "tsx",
+        -- Nix language
+        "nix",
       })
     end,
   },
