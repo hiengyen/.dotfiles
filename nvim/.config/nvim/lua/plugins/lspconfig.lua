@@ -1,12 +1,14 @@
 return {
   {
-    --00_For C/C++
-    opts ={
-      servers = {
-        nil_ls = {},
-      }
-
-    }
+    --00_For Nix language
+    {
+      "neovim/nvim-lspconfig",
+      opts = {
+        servers = {
+          nil_ls = {},
+        },
+      },
+    },
     --01_For Golang
     {
       "neovim/nvim-lspconfig",
