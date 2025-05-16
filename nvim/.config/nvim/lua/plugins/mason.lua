@@ -23,6 +23,8 @@ return {
         -- "python-lsp-server ",
         "pyright",
         "ruff",
+        --For Bash
+        "bash-language-server"
       })
     end,
   },
