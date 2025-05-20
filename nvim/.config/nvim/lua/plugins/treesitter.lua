@@ -20,7 +20,6 @@ return {
         "typescript",
         "tsx",
         -- Nix language
-        "nix",
       })
     end,
   },

@@ -1,14 +1,5 @@
 return {
   {
-    --00_For Nix language
-    {
-      "neovim/nvim-lspconfig",
-      opts = {
-        servers = {
-          nil_ls = {},
-        },
-      },
-    },
     --01_For Golang
     {
       "neovim/nvim-lspconfig",
@@ -138,8 +129,7 @@ return {
         },
       },
     },
-
-    --04 Typescript & Javascript wrapper
+    --03 Typescript & Javascript wrapper
     {
       "neovim/nvim-lspconfig",
       opts = {

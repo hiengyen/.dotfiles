@@ -7,24 +7,27 @@ return {
         -- For Lua
         "stylua",
         "selene",
-        "luacheck",
+        -- "luacheck",
         -- For any Shell
         "shellcheck",
         "shfmt",
-        --For Typescript ..
-        "typescript-language-server",
-        -- "css-lsp",
-        -- "js-debug-adapter",
-        --For Go
-        "gopls",
-        "goimports",
-        "gofumpt",
+        --For Bash
+        "bash-language-server",
+        -- For C/C++
+        "clangd",
+        "clang-format",
         --For Python
         -- "python-lsp-server ",
         "pyright",
         "ruff",
-        --For Bash
-        "bash-language-server"
+        --For Typescript ..
+        -- "typescript-language-server",
+        -- "css-lsp",
+        -- "js-debug-adapter",
+        --For Go
+        -- "gopls",
+        -- "goimports",
+        -- "gofumpt",
       })
     end,
   },
