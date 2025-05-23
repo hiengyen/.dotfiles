@@ -21,13 +21,13 @@ return {
         "pyright",
         "ruff",
         --For Typescript ..
-        -- "typescript-language-server",
-        -- "css-lsp",
-        -- "js-debug-adapter",
+        "typescript-language-server",
+        "css-lsp",
+        "js-debug-adapter",
         --For Go
-        -- "gopls",
-        -- "goimports",
-        -- "gofumpt",
+        "gopls",
+        "goimports",
+        "gofumpt",
       })
     end,
   },
