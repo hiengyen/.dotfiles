@@ -14,8 +14,8 @@ export NIXPKGS_ALLOW_UNFREE=1
 
 GITSTATUS_LOG_LEVEL=DEBUG
 #Add tmuxifier
-export PATH="$HOME/.tmuxifier/bin:$PATH"
-eval "$(tmuxifier init -)"
+# export PATH="$HOME/.tmuxifier/bin:$PATH"
+# eval "$(tmuxifier init -)"
 
 #Path for Golang
 export PATH=$PATH:/usr/local/go/bin #Global path
