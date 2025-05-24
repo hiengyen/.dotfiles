@@ -2,7 +2,7 @@ return {
 	{
 		"folke/tokyonight.nvim",
 		lazy = false,
-		priority = 1000,
+		-- priority = 1000,
 		opts = {
 			style = "storm",
 			transparent = true,
@@ -15,8 +15,7 @@ return {
 			vim.cmd("colorscheme tokyonight-moon")
 		end,
 	},
-	{ "nvim-tree/nvim-web-devicons", lazy = true },
-	{ "nvim-lualine/lualine.nvim", lazy = true },
-	{ "akinsho/bufferline.nvim", lazy = true },
-	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	-- { "nvim-tree/nvim-web-devicons", lazy = true },
+	-- { "nvim-lualine/lualine.nvim", lazy = true },
+	-- { "akinsho/bufferline.nvim", lazy = true },
 }
