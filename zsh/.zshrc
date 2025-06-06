@@ -9,7 +9,13 @@ fi
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-#Config Nix  
+#Path for Python Control Version
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+#Config Nix 
 export NIXPKGS_ALLOW_UNFREE=1
 
 GITSTATUS_LOG_LEVEL=DEBUG
