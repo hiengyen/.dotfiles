@@ -48,7 +48,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set alias command
-alias swptmux="tmuxifier"
+#alias swptmux="tmuxifier"
 
 #Docker command
 
