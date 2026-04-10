@@ -187,6 +187,12 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
+-- Window management keymaps
+vim.keymap.set('n', '<leader>wv', '<cmd>vsplit<cr>', { desc = 'Split [W]indow [V]ertically' })
+vim.keymap.set('n', '<leader>ws', '<cmd>split<cr>', { desc = 'Split [W]indow horizontally ([S]plit)' })
+vim.keymap.set('n', '<leader>wq', '<cmd>q<cr>', { desc = '[W]indow [Q]uit' })
+vim.keymap.set('n', '<leader>qq', '<cmd>q<cr>', { desc = '[Q]uit current window' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -328,6 +334,7 @@ require('lazy').setup({
       spec = {
         { '<leader>s', group = '[S]earch' },
         { '<leader>t', group = '[T]oggle' },
+        { '<leader>w', group = '[W]indow' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
       },
     },
