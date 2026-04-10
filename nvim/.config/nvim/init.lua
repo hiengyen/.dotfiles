@@ -155,6 +155,9 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- Save file using <C-s>
 vim.keymap.set({ 'n', 'i', 'v' }, '<C-s>', '<cmd>w<cr><esc>', { desc = 'Save file' })
 
+-- Open link in browser with Ctrl + Left Click
+vim.keymap.set('n', '<C-LeftMouse>', '<LeftMouse>gx', { desc = 'Open link under cursor' })
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
@@ -667,6 +670,9 @@ require('lazy').setup({
         rust_analyzer = {},
         bashls = {},
         nil_ls = {},
+        ansiblels = {},
+        terraformls = {},
+        yamlls = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -709,6 +715,8 @@ require('lazy').setup({
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
         'shfmt',  -- Used to format Bash scripts
+        'yamlfmt', -- Used to format YAML files
+        'tflint', -- Used to lint Terraform files
       })
       
       -- Skip installing nil_ls via Mason (to avoid FHS/build errors on Nix),
@@ -776,6 +784,9 @@ require('lazy').setup({
         sh = { 'shfmt' },
         nix = { 'nixfmt' },
         rust = { 'rustfmt' },
+        yaml = { 'yamlfmt' },
+        terraform = { 'terraform_fmt' },
+        hcl = { 'terraform_fmt' },
       },
     },
   },
@@ -944,7 +955,7 @@ require('lazy').setup({
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
-      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'python', 'go', 'rust', 'nix' },
+      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'python', 'go', 'rust', 'nix', 'yaml', 'terraform', 'hcl' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
@@ -978,7 +989,23 @@ require('lazy').setup({
   require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.neo-tree',
-  -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
+  require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
+
+  {
+    -- Add AI Codeium (Ghost Text)
+    'Exafunction/codeium.vim',
+    event = 'BufEnter',
+    config = function()
+      -- Disable default Codeium Tab binding to prevent conflict with autocomplete menu (blink.cmp)
+      vim.g.codeium_disable_bindings = 1
+      
+      -- Custom keymaps in Insert Mode
+      vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true, desc = 'Accept Codeium suggestion' })
+      vim.keymap.set('i', '<C-n>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true, desc = 'Next Codeium suggestion' })
+      vim.keymap.set('i', '<C-p>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true, silent = true, desc = 'Prev Codeium suggestion' })
+      vim.keymap.set('i', '<C-x>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true, desc = 'Clear Codeium suggestion' })
+    end
+  },
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.

@@ -6,7 +6,7 @@
 
 ## English Version
 
-Welcome to **hiengyen.nvim** - an extremely powerful, customized Neovim configuration built on top of the Kickstart.nvim framework. This setup transforms Neovim into a modern IDE, specially tuned to offer a seamless, intelligent, and rich coding experience.
+Welcome to **hiengyen.nvim** - an extremely powerful, customized Neovim configuration built on top of the Kickstart.nvim framework, beautifully themed with Dracula. This setup transforms Neovim into a modern IDE, specially tuned to offer a seamless, intelligent, and rich coding experience.
 
 ### 🚀 Fully Supported Languages
 
@@ -15,6 +15,7 @@ This configuration comes with an out-of-the-box system (LSP + Formatter + Treesi
 *   **C / C++**: `clangd` & `clang-format`.
 *   **Golang**: `gopls`, `goimports` & `gofmt`.
 *   **Rust**: `rust_analyzer` & `rustfmt`.
+*   **DevOps (Ansible, Terraform, YAML)**: `ansiblels`, `terraformls`, `yamlls`, `tflint`, `terraform_fmt` & `yamlfmt`.
 *   **Bash/Shell**: `bashls` & `shfmt`.
 *   **Nix**: `nil_ls` & `nixfmt`.
 *   **Lua**: `lua_ls` & `stylua`.
@@ -26,6 +27,8 @@ This configuration comes with an out-of-the-box system (LSP + Formatter + Treesi
 #### 1. Fundamental Keybinds & Navigation
 *   **`<Ctrl> + s`**: Instant file saving (works in Normal, Insert, and Visual modes).
 *   **`<Ctrl> + h/j/k/l`**: Navigate efficiently between split windows.
+*   **`<Ctrl> + Click`**: Open a URL/link under the cursor directly in the web browser.
+    *   *Tip for Command-line/Message Area links*: Hold **`<Shift>`** while clicking to bypass Neovim and let your terminal emulator open the link.
 *   **`<Esc><Esc>`**: Exit built-in Terminal mode easily.
 
 #### 2. Workspace & Window Management
@@ -44,12 +47,16 @@ This configuration comes with an out-of-the-box system (LSP + Formatter + Treesi
 *   **`\` (Backslash)**: Toggle the left-side file tree explorer.
     *   *Within tree*: Press `a` to add a file/dir, `d` to delete, `r` to rename.
 
-#### 5. IDE Superpowers (LSP & Autocomplete)
-*   **Autocomplete**: Use arrow keys or `<Ctrl>+n / <Ctrl>+p` to navigate. Press **`Tab`** to accept the suggestion.
+#### 5. IDE Superpowers & AI Assistant
+*   **Codeium AI Ghost Text**: Predicts your next lines of code as you type.
+    *   **`<Ctrl> + g`**: Accept current AI suggestion.
+    *   **`<Ctrl> + n` / `<Ctrl> + p`**: Cycle to next/previous AI suggestions.
+    *   **`<Ctrl> + x`**: Clear/Dismiss ghost text.
+*   **Standard Autocomplete**: Use arrow keys or `<Ctrl>+n` / `<Ctrl>+p` to navigate. Press **`Tab`** to accept the suggestion.
 *   **`grd`** *(Goto Definition)*: Jump directly to the original definition of a function/variable.
 *   **`grr`** *(Goto References)*: View references of where this is used.
 *   **`grn`** *(Rename)*: Smartly rename a variable across the entire scope.
-*   **`gra`** *(Code Action)*: Get AI/LSP assistance to fix issues (e.g. auto-imports, refactors).
+*   **`gra`** *(Code Action)*: Get LSP assistance to fix issues (e.g. auto-imports, refactors).
 
 #### 6. Auto-Formatting (Conform)
 *   By default, **saving a file (`<Ctrl> + s`)** automatically formats the code to specific language standards.
@@ -68,7 +75,7 @@ This configuration comes with an out-of-the-box system (LSP + Formatter + Treesi
 
 ## Phiên Bản Tiếng Việt
 
-Chào mừng bạn đến với **hiengyen.nvim** - một bộ cấu hình Neovim được tinh chỉnh và nâng cấp cực kỳ mạnh mẽ dựa trên nền tảng Kickstart.nvim. Cấu hình này được tùy biến để mang lại trải nghiệm code mượt mà, thông minh và đầy đủ tính năng nhất tựa như một IDE hiện đại.
+Chào mừng bạn đến với **hiengyen.nvim** - một bộ cấu hình Neovim được tinh chỉnh cực kỳ mạnh mẽ dựa trên nền tảng Kickstart.nvim, khoác lên mình giao diện tuyệt đẹp của theme Dracula. Cấu hình này được tùy biến để mang lại trải nghiệm code mượt mà, thông minh và đầy đủ tính năng nhất tựa như một IDE hiện đại.
 
 ### 🚀 Các Ngôn Ngữ Được Hỗ Trợ Toàn Diện
 
@@ -77,6 +84,7 @@ Bộ cấu hình nhúng sẵn hệ sinh thái phân tích mã nguồn (LSP + For
 *   **C / C++**: `clangd` & `clang-format`.
 *   **Golang**: `gopls`, `goimports` & `gofmt`.
 *   **Rust**: `rust_analyzer` & `rustfmt`.
+*   **DevOps (Ansible, Terraform, YAML)**: `ansiblels`, `terraformls`, `yamlls`, `tflint`, `terraform_fmt` & `yamlfmt`.
 *   **Bash/Shell**: `bashls` & `shfmt`.
 *   **Nix**: `nil_ls` & `nixfmt`.
 *   **Lua**: `lua_ls` & `stylua`.
@@ -88,6 +96,8 @@ Bộ cấu hình nhúng sẵn hệ sinh thái phân tích mã nguồn (LSP + For
 #### 1. Phím tắt Nền tảng & Di chuyển
 *   **`<Ctrl> + s`**: Lưu file siêu nhanh (Hoạt động ở mọi chế độ).
 *   **`<Ctrl> + h/j/k/l`**: Nhảy qua lại giữa các cửa sổ chia đôi (Split Window).
+*   **`<Ctrl> + Click`**: Mở trực tiếp một đường link (URL) tại vùng soạn thảo ra trình duyệt web.
+    *   *Mẹo mở link thông báo ở đáy màn hình (Command-line)*: Hãy giữ phím **`<Shift>`** rồi click chuột. Hành động này nhường quyền bắt click lại cho ứng dụng Terminal bên ngoài mở link giúp bạn!
 *   **`<Esc><Esc>`**: Thoát chế độ Terminal.
 
 #### 2. Quản lý Không gian làm việc (Window Splits)
@@ -106,8 +116,12 @@ Bộ cấu hình nhúng sẵn hệ sinh thái phân tích mã nguồn (LSP + For
 *   **`\` (Dấu gạch chéo ngược)**: Mở/Đóng nhanh thanh cây thư mục bên tay trái.
     *   *Trong cây thư mục*: Bấm `a` để tạo mục mới, `d` xoá, `r` đổi tên.
 
-#### 5. Sức mạnh IDE (LSP & Autocomplete)
-*   **Gợi ý code**: Dùng mũi tên hoặc `<Ctrl>+n / <Ctrl>+p` để lên xuống menu. **Bấm `Tab`** để điền hoàn thiện chữ.
+#### 5. Trợ lý AI & Sức mạnh IDE
+*   **Trợ lý Codeium AI (Ghost Text)**: AI đoán trước tương lai và điền sẵn code mờ lấp lánh khi gõ.
+    *   **`<Ctrl> + g`**: Chốt nhận gợi ý hiện tại của AI.
+    *   **`<Ctrl> + n` / `<Ctrl> + p`**: Lật xem phương án gợi ý tiếp theo/trước đó.
+    *   **`<Ctrl> + x`**: Xóa/Tắt bỏ gợi ý (khi thấy vướng mắt).
+*   **Gợi ý code thông thường**: Dùng mũi tên hoặc `<Ctrl>+n / <Ctrl>+p` để lên xuống menu. **Bấm `Tab`** để điền hoàn thiện chữ.
 *   **`grd`** *(Goto Definition)*: Nhảy đến vị trí khai báo gốc của biến/hàm.
 *   **`grr`** *(Goto References)*: Liệt kê nơi biến/hàm được gọi.
 *   **`grn`** *(Rename)*: Đổi tên biến đồng loạt trên toàn bộ tầm vực.
