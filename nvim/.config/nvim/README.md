@@ -34,6 +34,7 @@ _(Note: The **`<Leader>`** key is customized to the **`Space`** bar)_
 - **`<Esc><Esc>`**: Exit built-in Terminal mode easily.
 - **`<Leader> + l`**: Open Lazy Package Manager UI.
 - **`<Leader> + m`**: Open Mason Package Manager UI.
+- **SSH/Docker Clipboard**: Seamlessly copies text to your Host OS clipboard (OSC52) whenever you `y` (yank), bypassing complex X11/xclip issues.
 
 #### 2. Workspace & Window Management
 
@@ -114,6 +115,7 @@ _(Lưu ý: Phím **`<Leader>`** mặc định được cấu hình là phím **`
 - **`<Esc><Esc>`**: Thoát chế độ Terminal.
 - **`<Leader> + l`**: Mở giao diện tải Plugin (Lazy).
 - **`<Leader> + m`**: Mở giao diện cài đặt Linter/Formatter/LSP (Mason).
+- **Copy/Paste qua SSH/Docker**: Tự động đồng bộ văn bản vừa `y` (yank) ra Clipboard máy tính cá nhân (qua chuẩn OSC52), không còn lỗi thiếu quyền xclip hay màn hình `:0`.
 
 #### 2. Quản lý Không gian làm việc (Window Splits)
 
