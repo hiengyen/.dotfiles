@@ -11,65 +11,74 @@ Welcome to **hiengyen.nvim** - an extremely powerful, customized Neovim configur
 ### 🚀 Fully Supported Languages
 
 This configuration comes with an out-of-the-box system (LSP + Formatter + Treesitter) seamlessly running in the background for:
-*   **Python**: Supercharged with `pyright` (Static Type checking) and `ruff` (Lightning-fast Linter & Formatter).
-*   **C / C++**: `clangd` & `clang-format`.
-*   **Golang**: `gopls`, `goimports` & `gofmt`.
-*   **Rust**: `rust_analyzer` & `rustfmt`.
-*   **DevOps (Ansible, Terraform, YAML)**: `ansiblels`, `terraformls`, `yamlls`, `tflint`, `terraform_fmt` & `yamlfmt`.
-*   **Bash/Shell**: `bashls` & `shfmt`.
-*   **Nix**: `nil_ls` & `nixfmt`.
-*   **Lua**: `lua_ls` & `stylua`.
+
+- **Python**: Supercharged with `pyright` (Static Type checking) and `ruff` (Lightning-fast Linter & Formatter).
+- **C / C++**: `clangd` & `clang-format`.
+- **Golang**: `gopls`, `goimports` & `gofmt`.
+- **Rust**: `rust_analyzer` & `rustfmt`.
+- **DevOps (Ansible, Terraform, YAML)**: `ansiblels`, `terraformls`, `yamlls`, `tflint`, `terraform_fmt` & `yamlfmt`.
+- **Bash/Shell**: `bashls` & `shfmt`.
+- **Nix**: `nil_ls` & `nixfmt`.
+- **Lua**: `lua_ls` & `stylua`.
 
 ### 📖 Usage Cheat Sheet
 
-*(Note: The **`<Leader>`** key is customized to the **`Space`** bar)*
+_(Note: The **`<Leader>`** key is customized to the **`Space`** bar)_
 
 #### 1. Fundamental Keybinds & Navigation
-*   **`<Ctrl> + s`**: Instant file saving (works in Normal, Insert, and Visual modes).
-*   **`<Ctrl> + h/j/k/l`**: Navigate efficiently between split windows.
-*   **`<Ctrl> + Click`**: Open a URL/link under the cursor directly in the web browser.
-    *   *Tip for Command-line/Message Area links*: Hold **`<Shift>`** while clicking to bypass Neovim and let your terminal emulator open the link.
-*   **`<Esc><Esc>`**: Exit built-in Terminal mode easily.
+
+- **`<Ctrl> + s`**: Instant file saving (works in Normal, Insert, and Visual modes).
+- **`<Ctrl> + h/j/k/l`**: Navigate efficiently between split windows.
+- **`<Ctrl> + Click`**: Open a URL/link under the cursor directly in the web browser.
+  - _Tip for Command-line/Message Area links_: Hold **`<Shift>`** while clicking to bypass Neovim and let your terminal emulator open the link.
+- **`<Esc><Esc>`**: Exit built-in Terminal mode easily.
 
 #### 2. Workspace & Window Management
-*   **`<Leader> + wv`**: Split window vertically ([W]indow [V]ertical).
-*   **`<Leader> + ws`**: Split window horizontally ([W]indow [S]plit).
-*   **`<Leader> + wq`** (or **`<Leader> + qq`**): Quit the current window instantly.
+
+- **`<Leader> + wv`**: Split window vertically ([W]indow [V]ertical).
+- **`<Leader> + ws`**: Split window horizontally ([W]indow [S]plit).
+- **`<Leader> + wq`** (or **`<Leader> + qq`**): Quit the current window instantly.
 
 #### 3. Blazing Fast Searching (Telescope)
-*   **`<Leader> + sf`** *(Search Files)*: Fuzzy find any file in your workspace.
-*   **`<Leader> + sg`** *(Search by Grep)*: Live grep for strings everywhere in the project.
-*   **`<Leader> + sw`** *(Search Word)*: Search the current word under your cursor.
-*   **`<Leader> + <Leader>`**: Quick switch between recent buffers.
-*   **`<Leader> + /`**: Fuzzily search content directly inside the current buffer.
+
+- **`<Leader> + sf`** _(Search Files)_: Fuzzy find any file in your workspace.
+- **`<Leader> + sg`** _(Search by Grep)_: Live grep for strings everywhere in the project.
+- **`<Leader> + sw`** _(Search Word)_: Search the current word under your cursor.
+- **`<Leader> + <Leader>`**: Quick switch between recent buffers.
+- **`<Leader> + /`**: Fuzzily search content directly inside the current buffer.
 
 #### 4. File Explorer (Neo-tree)
-*   **`\` (Backslash)**: Toggle the left-side file tree explorer.
-    *   *Within tree*: Press `a` to add a file/dir, `d` to delete, `r` to rename.
+
+- **`\` (Backslash)**: Toggle the left-side file tree explorer.
+  - _Within tree_: Press `a` to add a file/dir, `d` to delete, `r` to rename.
 
 #### 5. IDE Superpowers & AI Assistant
-*   **Codeium AI Ghost Text**: Predicts your next lines of code as you type.
-    *   **`<Ctrl> + g`**: Accept current AI suggestion.
-    *   **`<Ctrl> + n` / `<Ctrl> + p`**: Cycle to next/previous AI suggestions.
-    *   **`<Ctrl> + x`**: Clear/Dismiss ghost text.
-*   **Standard Autocomplete**: Use arrow keys or `<Ctrl>+n` / `<Ctrl>+p` to navigate. Press **`Tab`** to accept the suggestion.
-*   **`grd`** *(Goto Definition)*: Jump directly to the original definition of a function/variable.
-*   **`grr`** *(Goto References)*: View references of where this is used.
-*   **`grn`** *(Rename)*: Smartly rename a variable across the entire scope.
-*   **`gra`** *(Code Action)*: Get LSP assistance to fix issues (e.g. auto-imports, refactors).
+
+- **Codeium AI Ghost Text**: Predicts your next lines of code as you type.
+  - **`<Alt> + a`**: Accept current AI suggestion.
+  - **`<Alt> + ]` / `<Alt> + [`**: Cycle to next/previous AI suggestions.
+  - **`<Alt> + x`**: Clear/Dismiss ghost text.
+- **Standard Autocomplete**: Use arrow keys or `<Ctrl>+n` / `<Ctrl>+p` to navigate. Press **`Tab`** to accept the suggestion.
+- **`grd`** _(Goto Definition)_: Jump directly to the original definition of a function/variable.
+- **`grr`** _(Goto References)_: View references of where this is used.
+- **`grn`** _(Rename)_: Smartly rename a variable across the entire scope.
+- **`gra`** _(Code Action)_: Get LSP assistance to fix issues (e.g. auto-imports, refactors).
 
 #### 6. Auto-Formatting (Conform)
-*   By default, **saving a file (`<Ctrl> + s`)** automatically formats the code to specific language standards.
-*   **`<Leader> + f`**: Trigger manual forced formatting at any time.
+
+- By default, **saving a file (`<Ctrl> + s`)** automatically formats the code to specific language standards.
+- **`<Leader> + f`**: Trigger manual forced formatting at any time.
 
 #### 7. Git Integration (Gitsigns)
-*   **`]c` / `[c`**: Jump quickly between next/previous Git changed blocks (hunks).
-*   **`<Leader> + hp`** *(Hunk Preview)*: Check out what the code previously looked like inline.
-*   **`<Leader> + tb`** *(Toggle Blame)*: Toggle faded text identifying the commit author & timestamp on the current line.
+
+- **`]c` / `[c`**: Jump quickly between next/previous Git changed blocks (hunks).
+- **`<Leader> + hp`** _(Hunk Preview)_: Check out what the code previously looked like inline.
+- **`<Leader> + tb`** _(Toggle Blame)_: Toggle faded text identifying the commit author & timestamp on the current line.
 
 #### 8. Super Speed Surrounding (Mini.surround)
-*   **Wrap Word (saiw + <char>)**: Hover over a word and rapidly type **`s` -> `a` -> `i` -> `w` -> `"`** (Surround Add Inner Word Quote). 
-*   **Delete Wrapper (sd + <char>)**: Hover over a wrapped word and type **`s` -> `d` -> `"`** (Surround Delete Quote). The quotes disappear instantly.
+
+- **Wrap Word (saiw + <char>)**: Hover over a word and rapidly type **`s` -> `a` -> `i` -> `w` -> `"`** (Surround Add Inner Word Quote).
+- **Delete Wrapper (sd + <char>)**: Hover over a wrapped word and type **`s` -> `d` -> `"`** (Surround Delete Quote). The quotes disappear instantly.
 
 ---
 
@@ -80,62 +89,71 @@ Chào mừng bạn đến với **hiengyen.nvim** - một bộ cấu hình Neovi
 ### 🚀 Các Ngôn Ngữ Được Hỗ Trợ Toàn Diện
 
 Bộ cấu hình nhúng sẵn hệ sinh thái phân tích mã nguồn (LSP + Formatter + Treesitter) hoạt động tự động dưới nền:
-*   **Python**: Mạnh mẽ với `pyright` (Phân tích tĩnh/Gợi ý) và `ruff` (Linter & Formatter siêu tốc).
-*   **C / C++**: `clangd` & `clang-format`.
-*   **Golang**: `gopls`, `goimports` & `gofmt`.
-*   **Rust**: `rust_analyzer` & `rustfmt`.
-*   **DevOps (Ansible, Terraform, YAML)**: `ansiblels`, `terraformls`, `yamlls`, `tflint`, `terraform_fmt` & `yamlfmt`.
-*   **Bash/Shell**: `bashls` & `shfmt`.
-*   **Nix**: `nil_ls` & `nixfmt`.
-*   **Lua**: `lua_ls` & `stylua`.
+
+- **Python**: Mạnh mẽ với `pyright` (Phân tích tĩnh/Gợi ý) và `ruff` (Linter & Formatter siêu tốc).
+- **C / C++**: `clangd` & `clang-format`.
+- **Golang**: `gopls`, `goimports` & `gofmt`.
+- **Rust**: `rust_analyzer` & `rustfmt`.
+- **DevOps (Ansible, Terraform, YAML)**: `ansiblels`, `terraformls`, `yamlls`, `tflint`, `terraform_fmt` & `yamlfmt`.
+- **Bash/Shell**: `bashls` & `shfmt`.
+- **Nix**: `nil_ls` & `nixfmt`.
+- **Lua**: `lua_ls` & `stylua`.
 
 ### 📖 Sổ Tay Hướng Dẫn Sử Dụng (Cheat Sheet)
 
-*(Lưu ý: Phím **`<Leader>`** mặc định được cấu hình là phím **`Space` (Dấu Cách)**)*
+_(Lưu ý: Phím **`<Leader>`** mặc định được cấu hình là phím **`Space` (Dấu Cách)**)_
 
 #### 1. Phím tắt Nền tảng & Di chuyển
-*   **`<Ctrl> + s`**: Lưu file siêu nhanh (Hoạt động ở mọi chế độ).
-*   **`<Ctrl> + h/j/k/l`**: Nhảy qua lại giữa các cửa sổ chia đôi (Split Window).
-*   **`<Ctrl> + Click`**: Mở trực tiếp một đường link (URL) tại vùng soạn thảo ra trình duyệt web.
-    *   *Mẹo mở link thông báo ở đáy màn hình (Command-line)*: Hãy giữ phím **`<Shift>`** rồi click chuột. Hành động này nhường quyền bắt click lại cho ứng dụng Terminal bên ngoài mở link giúp bạn!
-*   **`<Esc><Esc>`**: Thoát chế độ Terminal.
+
+- **`<Ctrl> + s`**: Lưu file siêu nhanh (Hoạt động ở mọi chế độ).
+- **`<Ctrl> + h/j/k/l`**: Nhảy qua lại giữa các cửa sổ chia đôi (Split Window).
+- **`<Ctrl> + Click`**: Mở trực tiếp một đường link (URL) tại vùng soạn thảo ra trình duyệt web.
+  - _Mẹo mở link thông báo ở đáy màn hình (Command-line)_: Hãy giữ phím **`<Shift>`** rồi click chuột. Hành động này nhường quyền bắt click lại cho ứng dụng Terminal bên ngoài mở link giúp bạn!
+- **`<Esc><Esc>`**: Thoát chế độ Terminal.
 
 #### 2. Quản lý Không gian làm việc (Window Splits)
-*   **`<Leader> + wv`**: Cắt màn hình chia làm hai theo chiều dọc (Window Vertical).
-*   **`<Leader> + ws`**: Cắt màn hình chia làm hai theo chiều ngang (Window Split).
-*   **`<Leader> + wq`** hoặc **`<Leader> + qq`**: Đóng cửa sổ hiện tại cực nhanh.
+
+- **`<Leader> + wv`**: Cắt màn hình chia làm hai theo chiều dọc (Window Vertical).
+- **`<Leader> + ws`**: Cắt màn hình chia làm hai theo chiều ngang (Window Split).
+- **`<Leader> + wq`** hoặc **`<Leader> + qq`**: Đóng cửa sổ hiện tại cực nhanh.
 
 #### 3. Tìm kiếm "Thần tốc" (Telescope)
-*   **`<Leader> + sf`** *(Search Files)*: Tìm file trong dự án.
-*   **`<Leader> + sg`** *(Search by Grep)*: Tìm kiếm bất kỳ văn bản nào xuyên suốt toàn bộ dự án.
-*   **`<Leader> + sw`** *(Search Word)*: Tìm từ khoá nơi con trỏ chuột đang chỉ.
-*   **`<Leader> + <Leader>`**: Chọn nhanh một file đang mở trước đó.
-*   **`<Leader> + /`**: Tìm kiếm nội dung trong file hiện hành.
+
+- **`<Leader> + sf`** _(Search Files)_: Tìm file trong dự án.
+- **`<Leader> + sg`** _(Search by Grep)_: Tìm kiếm bất kỳ văn bản nào xuyên suốt toàn bộ dự án.
+- **`<Leader> + sw`** _(Search Word)_: Tìm từ khoá nơi con trỏ chuột đang chỉ.
+- **`<Leader> + <Leader>`**: Chọn nhanh một file đang mở trước đó.
+- **`<Leader> + /`**: Tìm kiếm nội dung trong file hiện hành.
 
 #### 4. Quản lý Thư mục (Neo-tree)
-*   **`\` (Dấu gạch chéo ngược)**: Mở/Đóng nhanh thanh cây thư mục bên tay trái.
-    *   *Trong cây thư mục*: Bấm `a` để tạo mục mới, `d` xoá, `r` đổi tên.
+
+- **`\` (Dấu gạch chéo ngược)**: Mở/Đóng nhanh thanh cây thư mục bên tay trái.
+  - _Trong cây thư mục_: Bấm `a` để tạo mục mới, `d` xoá, `r` đổi tên.
 
 #### 5. Trợ lý AI & Sức mạnh IDE
-*   **Trợ lý Codeium AI (Ghost Text)**: AI đoán trước tương lai và điền sẵn code mờ lấp lánh khi gõ.
-    *   **`<Ctrl> + g`**: Chốt nhận gợi ý hiện tại của AI.
-    *   **`<Ctrl> + n` / `<Ctrl> + p`**: Lật xem phương án gợi ý tiếp theo/trước đó.
-    *   **`<Ctrl> + x`**: Xóa/Tắt bỏ gợi ý (khi thấy vướng mắt).
-*   **Gợi ý code thông thường**: Dùng mũi tên hoặc `<Ctrl>+n / <Ctrl>+p` để lên xuống menu. **Bấm `Tab`** để điền hoàn thiện chữ.
-*   **`grd`** *(Goto Definition)*: Nhảy đến vị trí khai báo gốc của biến/hàm.
-*   **`grr`** *(Goto References)*: Liệt kê nơi biến/hàm được gọi.
-*   **`grn`** *(Rename)*: Đổi tên biến đồng loạt trên toàn bộ tầm vực.
-*   **`gra`** *(Code Action)*: Tự động sửa lỗi (VD: tự động import thư viện).
+
+- **Trợ lý Codeium AI (Ghost Text)**: AI đoán trước tương lai và điền sẵn code mờ lấp lánh khi gõ.
+  - **`<Alt> + a`**: Chốt nhận toàn bộ gợi ý hiện tại của AI.
+  - **`<Alt> + ]` / `<Alt> + [`**: Lật xem phương án gợi ý tiếp theo/trước đó.
+  - **`<Alt> + x`**: Xóa/Tắt bỏ gợi ý (tránh vướng mắt).
+- **Gợi ý code thông thường**: Dùng mũi tên hoặc `<Ctrl>+n / <Ctrl>+p` để lên xuống menu. **Bấm `Tab`** để điền hoàn thiện chữ.
+- **`grd`** _(Goto Definition)_: Nhảy đến vị trí khai báo gốc của biến/hàm.
+- **`grr`** _(Goto References)_: Liệt kê nơi biến/hàm được gọi.
+- **`grn`** _(Rename)_: Đổi tên biến đồng loạt trên toàn bộ tầm vực.
+- **`gra`** _(Code Action)_: Tự động sửa lỗi (VD: tự động import thư viện).
 
 #### 6. Tự động Định dạng (Conform)
-*   Mặc định **khi bấm Lưu file (`<Ctrl> + s`)**, code sẽ tự động căn lề hoàn hảo dựa trên tiêu chuẩn cốt lõi của từng ngôn ngữ.
-*   **`<Leader> + f`**: Ép định dạng thủ công bất kỳ lúc nào.
+
+- Mặc định **khi bấm Lưu file (`<Ctrl> + s`)**, code sẽ tự động căn lề hoàn hảo dựa trên tiêu chuẩn cốt lõi của từng ngôn ngữ.
+- **`<Leader> + f`**: Ép định dạng thủ công bất kỳ lúc nào.
 
 #### 7. Dấu vết Git (Gitsigns)
-*   **`]c` / `[c`**: Nhảy nhanh đến dòng code bị thay đổi tiếp/trước.
-*   **`<Leader> + hp`** *(Hunk Preview)*: Xem code quá khứ ở dòng hiện tại trước khi bị sửa đổi trông thế nào.
-*   **`<Leader> + tb`** *(Toggle Blame)*: Hiển thị mờ mờ ở cuối dòng tên kèm thời điểm thao tác git của người viết (blame).
+
+- **`]c` / `[c`**: Nhảy nhanh đến dòng code bị thay đổi tiếp/trước.
+- **`<Leader> + hp`** _(Hunk Preview)_: Xem code quá khứ ở dòng hiện tại trước khi bị sửa đổi trông thế nào.
+- **`<Leader> + tb`** _(Toggle Blame)_: Hiển thị mờ mờ ở cuối dòng tên kèm thời điểm thao tác git của người viết (blame).
 
 #### 8. Bao bọc chữ nhanh (Mini.surround)
-*   **Cách Bọc Chữ (saiw + <dấu>)**: Trỏ vào chữ. Gõ nhanh **`s` -> `a` -> `i` -> `w` -> `"`**. 
-*   **Cách Gỡ Bỏ (sd + <dấu>)**: Trỏ vào chữ bị bọc. Gõ nhanh **`s` -> `d` -> `"`**. Lập tức cặp ngoặc sẽ biến mất.
+
+- **Cách Bọc Chữ (saiw + <dấu>)**: Trỏ vào chữ. Gõ nhanh **`s` -> `a` -> `i` -> `w` -> `"`**.
+- **Cách Gỡ Bỏ (sd + <dấu>)**: Trỏ vào chữ bị bọc. Gõ nhanh **`s` -> `d` -> `"`**. Lập tức cặp ngoặc sẽ biến mất.

@@ -999,13 +999,14 @@ require('lazy').setup({
       -- Disable default Codeium Tab binding to prevent conflict with autocomplete menu (blink.cmp)
       vim.g.codeium_disable_bindings = 1
       
-      -- Custom keymaps in Insert Mode
-      vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true, desc = 'Accept Codeium suggestion' })
-      vim.keymap.set('i', '<C-n>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true, desc = 'Next Codeium suggestion' })
-      vim.keymap.set('i', '<C-p>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true, silent = true, desc = 'Prev Codeium suggestion' })
-      vim.keymap.set('i', '<C-x>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true, desc = 'Clear Codeium suggestion' })
+      -- Custom keymaps in Insert Mode (Using Alt/Meta keys to avoid conflicts)
+      vim.keymap.set('i', '<M-a>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true, desc = 'Accept Codeium suggestion' })
+      vim.keymap.set('i', '<M-]>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true, desc = 'Next Codeium suggestion' })
+      vim.keymap.set('i', '<M-[>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true, silent = true, desc = 'Prev Codeium suggestion' })
+      vim.keymap.set('i', '<M-x>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true, desc = 'Clear Codeium suggestion' })
     end
   },
+
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
