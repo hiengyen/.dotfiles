@@ -32,6 +32,8 @@ _(Note: The **`<Leader>`** key is customized to the **`Space`** bar)_
 - **`<Ctrl> + Click`**: Open a URL/link under the cursor directly in the web browser.
   - _Tip for Command-line/Message Area links_: Hold **`<Shift>`** while clicking to bypass Neovim and let your terminal emulator open the link.
 - **`<Esc><Esc>`**: Exit built-in Terminal mode easily.
+- **`<Leader> + l`**: Open Lazy Package Manager UI.
+- **`<Leader> + m`**: Open Mason Package Manager UI.
 
 #### 2. Workspace & Window Management
 
@@ -110,6 +112,8 @@ _(Lưu ý: Phím **`<Leader>`** mặc định được cấu hình là phím **`
 - **`<Ctrl> + Click`**: Mở trực tiếp một đường link (URL) tại vùng soạn thảo ra trình duyệt web.
   - _Mẹo mở link thông báo ở đáy màn hình (Command-line)_: Hãy giữ phím **`<Shift>`** rồi click chuột. Hành động này nhường quyền bắt click lại cho ứng dụng Terminal bên ngoài mở link giúp bạn!
 - **`<Esc><Esc>`**: Thoát chế độ Terminal.
+- **`<Leader> + l`**: Mở giao diện tải Plugin (Lazy).
+- **`<Leader> + m`**: Mở giao diện cài đặt Linter/Formatter/LSP (Mason).
 
 #### 2. Quản lý Không gian làm việc (Window Splits)
 

@@ -89,13 +89,10 @@ vim.o.mouse = 'a'
 -- Don't show the mode, since it's already in the status line
 vim.o.showmode = false
 
--- Sync clipboard between OS and Neovim.
---  Schedule the setting after `UiEnter` because it can increase startup-time.
---  Remove this option if you want your OS clipboard to remain independent.
---  See `:help 'clipboard'`
-vim.schedule(function()
-  vim.o.clipboard = 'unnamedplus'
-end)
+-- We disable 'unnamedplus' because xclip breaks over SSH/Wayland without X11.
+-- Instead, we use the OSC52 plugin (configured at the bottom of the file)
+-- to push yanked text directly through the terminal emulator to your Host OS.
+-- vim.o.clipboard = 'unnamedplus'
 
 -- Enable break indent
 vim.o.breakindent = true
@@ -195,6 +192,10 @@ vim.keymap.set('n', '<leader>wv', '<cmd>vsplit<cr>', { desc = 'Split [W]indow [V
 vim.keymap.set('n', '<leader>ws', '<cmd>split<cr>', { desc = 'Split [W]indow horizontally ([S]plit)' })
 vim.keymap.set('n', '<leader>wq', '<cmd>q<cr>', { desc = '[W]indow [Q]uit' })
 vim.keymap.set('n', '<leader>qq', '<cmd>q<cr>', { desc = '[Q]uit current window' })
+
+-- Package manager UI keymaps
+vim.keymap.set('n', '<leader>l', '<cmd>Lazy<cr>', { desc = 'Open [L]azy UI' })
+vim.keymap.set('n', '<leader>m', '<cmd>Mason<cr>', { desc = 'Open [M]ason UI' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
@@ -1004,6 +1005,28 @@ require('lazy').setup({
       vim.keymap.set('i', '<M-]>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true, desc = 'Next Codeium suggestion' })
       vim.keymap.set('i', '<M-[>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true, silent = true, desc = 'Prev Codeium suggestion' })
       vim.keymap.set('i', '<M-x>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true, desc = 'Clear Codeium suggestion' })
+    end
+  },
+
+  {
+    -- Plugin: nvim-osc52
+    -- Helps copy text directly to your Local OS clipboard securely via the terminal,
+    -- avoiding 'xclip: Authorization required' errors in SSH/Wayland/Docker.
+    'ojroques/nvim-osc52',
+    config = function()
+      require('osc52').setup({
+        max_length = 0,
+        silent = true,
+      })
+      
+      -- Whenever you 'y' (yank), it pushes a copy command bypassing X11/Wayland
+      vim.api.nvim_create_autocmd('TextYankPost', {
+        callback = function()
+          if vim.v.event.operator == 'y' then
+            require('osc52').copy_register('')
+          end
+        end,
+      })
     end
   },
 
