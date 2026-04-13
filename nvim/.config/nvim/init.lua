@@ -1009,21 +1009,16 @@ require('lazy').setup({
   },
 
   {
-    -- Plugin: nvim-osc52
+    -- Plugin: vim-oscyank
     -- Helps copy text directly to your Local OS clipboard securely via the terminal,
     -- avoiding 'xclip: Authorization required' errors in SSH/Wayland/Docker.
-    'ojroques/nvim-osc52',
+    'ojroques/vim-oscyank',
     config = function()
-      require('osc52').setup({
-        max_length = 0,
-        silent = true,
-      })
-      
       -- Whenever you 'y' (yank), it pushes a copy command bypassing X11/Wayland
       vim.api.nvim_create_autocmd('TextYankPost', {
         callback = function()
-          if vim.v.event.operator == 'y' then
-            require('osc52').copy_register('')
+          if vim.v.event.operator == 'y' and vim.v.event.regname == '' then
+            vim.cmd('OSCYankRegister "')
           end
         end,
       })
