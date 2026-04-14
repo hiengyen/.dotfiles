@@ -90,9 +90,8 @@ vim.o.mouse = 'a'
 vim.o.showmode = false
 
 -- We disable 'unnamedplus' because xclip breaks over SSH/Wayland without X11.
--- Instead, we use the OSC52 plugin (configured at the bottom of the file)
 -- to push yanked text directly through the terminal emulator to your Host OS.
--- vim.o.clipboard = 'unnamedplus'
+vim.o.clipboard = 'unnamedplus'
 
 -- Enable break indent
 vim.o.breakindent = true
@@ -715,15 +714,15 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
-        'shfmt',  -- Used to format Bash scripts
+        'shfmt', -- Used to format Bash scripts
         'yamlfmt', -- Used to format YAML files
         'tflint', -- Used to lint Terraform files
       })
-      
+
       -- Skip installing nil_ls via Mason (to avoid FHS/build errors on Nix),
       -- and rely on the system-provided package (Nixpkgs) instead.
       ensure_installed = vim.tbl_filter(function(name)
-        return name ~= "nil_ls"
+        return name ~= 'nil_ls'
       end, ensure_installed)
 
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
@@ -899,10 +898,10 @@ require('lazy').setup({
     'Mofiqul/dracula.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     config = function()
-      require('dracula').setup({
+      require('dracula').setup {
         -- Add dracula customizations if needed
         italic_comment = false,
-      })
+      }
 
       -- Load the colorscheme here.
       vim.cmd.colorscheme 'dracula'
@@ -956,7 +955,26 @@ require('lazy').setup({
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
-      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'python', 'go', 'rust', 'nix', 'yaml', 'terraform', 'hcl' },
+      ensure_installed = {
+        'bash',
+        'c',
+        'diff',
+        'html',
+        'lua',
+        'luadoc',
+        'markdown',
+        'markdown_inline',
+        'query',
+        'vim',
+        'vimdoc',
+        'python',
+        'go',
+        'rust',
+        'nix',
+        'yaml',
+        'terraform',
+        'hcl',
+      },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
@@ -999,13 +1017,21 @@ require('lazy').setup({
     config = function()
       -- Disable default Codeium Tab binding to prevent conflict with autocomplete menu (blink.cmp)
       vim.g.codeium_disable_bindings = 1
-      
+
       -- Custom keymaps in Insert Mode (Using Alt/Meta keys to avoid conflicts)
-      vim.keymap.set('i', '<M-a>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true, desc = 'Accept Codeium suggestion' })
-      vim.keymap.set('i', '<M-]>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true, desc = 'Next Codeium suggestion' })
-      vim.keymap.set('i', '<M-[>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true, silent = true, desc = 'Prev Codeium suggestion' })
-      vim.keymap.set('i', '<M-x>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true, desc = 'Clear Codeium suggestion' })
-    end
+      vim.keymap.set('i', '<M-a>', function()
+        return vim.fn['codeium#Accept']()
+      end, { expr = true, silent = true, desc = 'Accept Codeium suggestion' })
+      vim.keymap.set('i', '<M-]>', function()
+        return vim.fn['codeium#CycleCompletions'](1)
+      end, { expr = true, silent = true, desc = 'Next Codeium suggestion' })
+      vim.keymap.set('i', '<M-[>', function()
+        return vim.fn['codeium#CycleCompletions'](-1)
+      end, { expr = true, silent = true, desc = 'Prev Codeium suggestion' })
+      vim.keymap.set('i', '<M-x>', function()
+        return vim.fn['codeium#Clear']()
+      end, { expr = true, silent = true, desc = 'Clear Codeium suggestion' })
+    end,
   },
 
   {
@@ -1018,13 +1044,12 @@ require('lazy').setup({
       vim.api.nvim_create_autocmd('TextYankPost', {
         callback = function()
           if vim.v.event.operator == 'y' and vim.v.event.regname == '' then
-            vim.cmd('OSCYankRegister "')
+            vim.cmd 'OSCYankRegister "'
           end
         end,
       })
-    end
+    end,
   },
-
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
