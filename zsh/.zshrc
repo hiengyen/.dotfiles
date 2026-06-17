@@ -155,3 +155,16 @@ unset TMUX
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/powerlevel10k/.p10k.zsh.
 [[ ! -f ~/.dotfiles/powerlevel10k/.p10k.zsh ]] || source ~/.dotfiles/powerlevel10k/.p10k.zsh
+
+# opencode
+export PATH=/home/hiengyen/.opencode/bin:$PATH
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/hiengyen/.local/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/hiengyen/google-cloud-sdk/path.zsh.inc' ]; then . '/home/hiengyen/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/hiengyen/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/hiengyen/google-cloud-sdk/completion.zsh.inc'; fi

@@ -11,3 +11,5 @@
 	directory = /home/hiengyen/.dotfiles/ohmyzsh/.oh-my-zsh
 
 
+[credential]
+	helper = store
