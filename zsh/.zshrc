@@ -168,3 +168,21 @@ if [ -f '/home/hiengyen/google-cloud-sdk/path.zsh.inc' ]; then . '/home/hiengyen
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/hiengyen/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/hiengyen/google-cloud-sdk/completion.zsh.inc'; fi
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/hiengyen/.conda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/hiengyen/.conda/etc/profile.d/conda.sh" ]; then
+        . "/home/hiengyen/.conda/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/hiengyen/.conda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
